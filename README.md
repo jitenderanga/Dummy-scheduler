@@ -1,5 +1,5 @@
 # Dummy-scheduler
-For Your info its not even close to a scheduler its just dummy implementaion. It would have been a scheduler if I would have created a process of my own on user request and scheduled that on the task for some interval on the CPU but its not doing any that kind of stuff. 
+For Your info its not even close to a scheduler its just dummy implementaion. It would have been a scheduler if I would have created a process of my own on user request and scheduled that task for some interval on the CPU but its not doing any that kind of stuff. 
 
 Dummy Scheduler is a Kernel Module which is interfaced with sysfs. Its Main objective is to run on behalf of the user to serve a process which have been queued by the user. Every Proccess has a Circular Linked Queue assigned to it which is based on the priority. Priority can range from 0 to 5 so their are 6 queues for each priority. Default priority is 0. Process also have a policy assigned to it which decide the how cpu will be utilized by that process.
 
